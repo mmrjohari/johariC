@@ -11,7 +11,7 @@ class SimpleHandler(BaseHTTPRequestHandler):\n\
         self.send_response(200)\n\
         self.send_header("Content-type", "text/html")\n\
         self.end_headers()\n\
-        self.wfile.write(b"Hello World!")\n\
+        self.wfile.write(b"Hello World! 2")\n\
 \n\
 server = HTTPServer(("0.0.0.0", 8080), SimpleHandler)\n\
 print("Starting server on port 8080...")\n\
